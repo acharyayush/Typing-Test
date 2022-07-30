@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.gameContainer{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+.gameName{
+    color: rgb(0, 148, 133);
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.gameMain{
+    width: 600px;
+    height: 450px;
+    padding: 1rem;
+    border: 5px solid rgb(0, 110, 99);
+    border-radius: 5px;
+}
+#guessWord{
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+    color: rgb(0, 110, 99);
+}
+#chanceLeft{
+    text-align: right;
+    padding: 0.5rem;
+    color: rgb(0, 110, 99);
+}
+.letterBoxContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.box{
+    width: 50px;
+    height: 50px;
+    border: 4px solid rgb(83, 83, 83);
+    text-align: center;
+    margin: 0.5rem;
+    border-radius: 2px;
+    font-size: 1.8rem;
+    display: grid;
+    place-content: center;
+}
+.guessHere{
+    font-size: 1.4rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    outline: none;
+    border: 3px rgb(0, 110, 99) solid;
+}
+.submit{
+    border: 2px rgb(0, 110, 99) solid;
+    background: rgb(0, 110, 99);
+    border-radius: 3px;
+    outline: none;
+    font-size: 1.4rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: white;
+}
+.bestResult{
+text-align: center;
+font-size: 1.2rem;
+}
+.inputs{
+text-align: center;
+margin: 2rem 0;
+}
+.green{
+    color:rgb(0, 110, 99);
+}
+.red{
+    color: rgb(189, 0, 0);
+}
+.yellow{
+    color: rgb(231, 189, 0);
+}
+.resultMenu{
+    width: 450px;
+    height: 520px;
+    border-radius: 15px;
+    background: rgb(0, 110, 99);
+    padding: 1rem;
+    display: none;
+}
+.resultStatus{
+    text-align: center;
+    font-size: 2.5rem;
+    color: rgb(229, 255, 0);
+    margin-top: 1rem;
+    letter-spacing: 2px;
+}
+.realWord{
+    text-align: center;
+    font-size: 1.3rem;
+    color: white;
+    margin-top: 1rem;
+}
+.resultImg{
+    width: 200px;
+    height: 200px;
+    margin: 1rem auto;
+}
+.restart{
+    text-align: center;
+}
+.restart i{
+    color: white;
+    font-size: 2rem;
+    border: 4px solid rgb(255, 255, 255);
+    background: rgb(255, 145, 0);
+    padding: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.score{
+    margin: 1rem;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+.wordSizeMenuContainer{
+    position: absolute;
+    width: 350px;
+    height: 100vh;
+}
+.menuIcon{
+    position: absolute;
+    top: 70px;
+}
+.menuIcon i{
+    padding: 1rem;
+    background: rgb(0, 110, 99);
+    color: white;
+    font-size: 2rem;
+    border-radius: 0 10px 10px 0;
+}
+.wordSizeMenu h2{
+    text-align: center;
+    color: white;
+}
+.wordSizeMenu{
+    position: absolute;
+    width: 100%;
+    height: 430px;
+    padding: 1.5rem;
+    background: rgb(0, 110, 99);
+    border-radius: 0 10px 10px 0;
+    top: 150px;
+    left: -100%;
+    transition: 1s;
+}
+.activeMenuBox{
+    left: 0%;
+}
+.levelContainer{
+    display: grid;
+    justify-items: center;
+    grid-gap: 1.1rem;
+    margin-top: 2rem;
+    grid-template-columns: 1fr 1fr;
+}
+.levels{
+    color: white;
+    width: 90px;
+    height: 90px;
+    border: 4px solid white;
+    border-radius: 10px;
+    display: grid;
+    place-content: center;
+    font-size: 4rem;
+    cursor: pointer;
+}
+.activeLevel{
+    background-color: white;
+    color: rgb(0, 110, 99);
+    font-weight: bold;
+}
