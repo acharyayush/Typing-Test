@@ -159,8 +159,10 @@ function startTyping() {
   }
   if (isParagraphSwitched()) {
     let height = prevLetterParent.clientHeight;
-    if (writtencharArr[indexForScroll] == null)
+    if (writtencharArr[indexForScroll] == null){
+      height = paraLetterArr[charIndex-1].parentElement.clientHeight;
       paragraphContainer.scrollBy(0, -(height + parseInt(margin)));
+    }
     else paragraphContainer.scrollBy(0, height + parseInt(margin));
   }
 }
