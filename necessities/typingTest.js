@@ -15,7 +15,7 @@ const paragraphContainer = document.querySelector(".paragraphContainer");
 let interval;
 let time = document.querySelector(".time");
 let activeLanguage = document.querySelector(".activeLanguage");
-let activeTimeDuration = 30*60;
+let activeTimeDuration = 1*60; // in seconds
 let paraLength = 20;
 let toggleLanMenu, handleLanSelection;
 let timeLeft = 60, timeTaken;
@@ -29,7 +29,7 @@ let randIndex;
 //Main.....................................................**********************
 menuListItem[0].classList.add("activeMenu");
 languages[0].classList.add("activeMenu");
-timeMenus[timeMenus.length-1].classList.add("activeMenu");
+timeMenus[0].classList.add("activeMenu");
 paraSizes[paraSizes.length-1].classList.add("activeMenu");
 menuType[0].classList.add("activeMenuType");
 //remove menucontainer whenever clicked on the click
