@@ -32,7 +32,7 @@
 .paragraphContainer {
   overflow: hidden;
   scroll-behavior: smooth;
-  text-align: justify;
+  text-align: center;
   padding: var(--spacing);
   letter-spacing: 1px;
   width: 55vw;
